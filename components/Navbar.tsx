@@ -5,6 +5,7 @@ import React from "react";
 import { HiBars3 } from "react-icons/hi2";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/PHOTO-2025-11-04-10-15-40.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,23 +13,23 @@ const Navbar = () => {
   const links = [
     {
       name: "Services",
-      route: "",
+      route: "#services",
     },
     {
       name: "Projects",
-      route: "",
+      route: "#projects",
     },
     {
       name: "Contacts",
-      route: "",
+      route: "#contact",
     },
   ];
 
   return (
     <nav className="absolute top-0 left-0 w-full px-[5%] lg:px-[8%] z-50">
       <div className="2xl:container mx-auto flex justify-between">
-        <div className="w-full fixed left-0 top-0 lg:relative lg:w-4/10 bg-white p-5 flex justify-between">
-          <h2 className="text-xl">MidexArt</h2>
+        <div className="w-full fixed left-0 top-0 lg:relative lg:w-4/10 bg-white px-5 py-3 flex justify-between">
+          <img src={logo.src} alt="" className="w-[50px] object-cover" />
           <button className="cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
             <HiBars3 size={25} />
           </button>
@@ -76,3 +77,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+// #270F42

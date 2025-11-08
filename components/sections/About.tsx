@@ -13,6 +13,7 @@ const About = () => {
 
   return (
     <section
+      id="about"
       style={{
         backgroundImage: `url(${bgImage.src})`,
         backgroundSize: "cover",
@@ -35,8 +36,8 @@ const About = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            We're innovating the way companies reinvent their office spaces for
-            the remote workforce.
+            We're transforming spaces with premium interior painting solutions
+            that bring your vision to life.
           </h1>
 
           <p

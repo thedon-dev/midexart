@@ -18,9 +18,13 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Midex Art | Premium Interior Design Services",
   description:
-    "Transform your spaces with Midex Art's expert interior design services. Luxury residential & commercial designs tailored to your vision.",
+    "Midex Art specializes in professional painting services, POP ceiling installations, wall screeding, and interior finishing for homes and offices. Quality craftsmanship guaranteed.",
   keywords: [
     "interior design",
+    "painting services",
+    "POP ceiling installations",
+    "wall screeding",
+    "interior finishing",
     "home decor",
     "luxury interiors",
     "space planning",
@@ -30,7 +34,7 @@ export const metadata: Metadata = {
     title: "Midex Art | Premium Interior Design Services",
     description:
       "Professional interior design solutions for homes and businesses",
-    url: "https://midexart.com",
+    url: "https://midexart.art",
     siteName: "Midex Art",
     images: [
       {

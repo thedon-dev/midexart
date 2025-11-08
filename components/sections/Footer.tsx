@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { BsInstagram, BsTwitterX } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FiMail } from "react-icons/fi";
 
 const Footer = () => {
   React.useEffect(() => {
@@ -20,15 +21,15 @@ const Footer = () => {
   const navigation = [
     {
       name: "Services",
-      route: "",
+      route: "#services",
     },
     {
       name: "Team",
-      route: "",
+      route: "#team",
     },
     {
       name: "Contact",
-      route: "",
+      route: "#footer",
     },
   ];
 
@@ -36,22 +37,22 @@ const Footer = () => {
     {
       name: "@midexart",
       icon: <FaFacebook size={20} />,
-      route: "",
+      route: "https://www.facebook.com/midexv?mibextid=LQQJ4d",
     },
     {
       name: "@midexart",
       icon: <BsInstagram size={20} />,
-      route: "",
+      route: "https://www.instagram.com/midexart?igsh=MXVtZGJmdWh6aHhmeg==",
     },
     {
-      name: "@midexart",
-      icon: <BsTwitterX size={20} />,
-      route: "",
+      name: "midemidexartdesigns3@gmail.com",
+      icon: <FiMail size={20} />,
+      route: "mailto:midemidexartdesigns3@gmail.com",
     },
   ];
 
   return (
-    <footer className="px-[5%] lg:px-[8%] bg-[#090B19] text-white">
+    <footer id="contact" className="px-[5%] lg:px-[8%] bg-[#270F42] text-white">
       <div
         className="border-x border-white/5 lg:grid grid-cols-3"
         data-aos="fade-up"
@@ -59,9 +60,12 @@ const Footer = () => {
         <div className="py-20 lg:py-32" data-aos="fade-up" data-aos-delay="100">
           <h2 className="text-4xl font-bold">Midexart</h2>
           <h4 className="font-semibold text-sm my-5">About Us</h4>
-          <p className="text-xs w-[95%] mt-3">
-            Midex Art is a premier interior design company specializing in
-            creating luxurious and functional spaces.
+          <p className="text-xs w-[95%] mt-3 text-justify">
+            Midex Art is known for exceptional craftsmanship and attention to
+            detail. Our team of skilled professionals transforms spaces with
+            flawless interior painting services for both homes and offices. We
+            take pride in delivering beautiful, long-lasting results that exceed
+            our clients' expectations.
           </p>
         </div>
 
@@ -100,8 +104,10 @@ const Footer = () => {
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          <h3 className="text-xs font-mono mt-[130px]">Follow us on socials</h3>
-          <div className="border-y border-white/5 flex flex-col mt-5">
+          <h3 className="text-xs font-mono mt-[70px] lg:mt-[130px]">
+            Follow us on socials
+          </h3>
+          <div className="border-y border-white/5 flex flex-col mt-5 mb-10">
             {socials.map((sol, index) => (
               <motion.div
                 data-aos="fade-up"
@@ -124,8 +130,8 @@ const Footer = () => {
               </motion.div>
             ))}
           </div>
-          <p className="text-xs font-serif mt-auto absolute bottom-8">
-            © 2025 MIDEXART. All rights reserved.
+          <p className="text-xs font-serif mt-auto absolute bottom-14">
+            © {new Date().getFullYear()} MIDEXART. All rights reserved.
           </p>
         </div>
       </div>

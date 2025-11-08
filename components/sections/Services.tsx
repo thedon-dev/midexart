@@ -18,27 +18,27 @@ const Services = () => {
   const clients = [{}];
   const services = [
     {
-      heading: "Space Planning",
+      heading: "POP Ceiling Installation",
       description:
-        "We create smart and functional layouts that optimize every inch of your space, ensuring comfort, beauty, and effortless movement.",
-      icon: <LuBlocks size={25} color="#B9BED0" />,
+        "Professional installation of plaster of Paris ceilings with custom designs to enhance your interior spaces.",
+      icon: <LuBlocks size={25} color="#270F42" />,
     },
     {
-      heading: "Custom Furniture",
+      heading: "Wall Screeding",
       description:
-        "Designed to perfectly fit your lifestyle and aesthetic, our bespoke furniture pieces bring a unique and luxurious touch to your interiors.",
-      icon: <LuBlocks size={25} color="#B9BED0" />,
+        "High-quality wall screeding services to create perfectly smooth surfaces ready for painting or finishing.",
+      icon: <LuBlocks size={25} color="#270F42" />,
     },
     {
-      heading: "Furniture Layout",
+      heading: "Home & Office Painting",
       description:
-        "We strategically place furnishings to enhance balance, visual flow, and usability, achieving a well-coordinated and inviting environment.",
-      icon: <LuBlocks size={25} color="#B9BED0" />,
+        "Complete interior painting solutions for both residential and commercial spaces using premium quality paints.",
+      icon: <LuBlocks size={25} color="#270F42" />,
     },
   ];
 
   return (
-    <section className="px-[5%] lg:px-[8%]" data-aos="fade-up">
+    <section id="services" className="px-[5%] lg:px-[8%]" data-aos="fade-up">
       <div className="border-r border-black/5 2xl:container mx-auto">
         <div className="bg-[#F3F6FC] p-10 w-8/12" data-aos="fade-right">
           <div className="flex gap-2 items-center">
@@ -57,11 +57,13 @@ const Services = () => {
             data-aos="fade-right"
           >
             <h5 className="text-xs font-mono tracking-[0.2rem]">Services</h5>
-            <h1 className="text-5xl font-semibold mt-1">We do it best.</h1>
+            <h1 className="text-5xl font-semibold mt-1 text-[#270F42]">
+              We do it best.
+            </h1>
             <div className="mt-10" data-aos="fade-left">
               <Link
                 href="#services"
-                className="bg-black flex lg:hidden w-fit rounded-full px-6 py-4 text-white text-[0.65rem] font-mono"
+                className="bg-[#270F42] flex lg:hidden w-fit rounded-full px-6 py-4 text-white text-[0.65rem] font-mono"
               >
                 View all services
               </Link>
@@ -92,7 +94,9 @@ const Services = () => {
                 {service.icon}
               </div>
 
-              <h2 className="font-bold mt-10 text-lg">{service.heading}</h2>
+              <h2 className="font-bold mt-10 text-lg text-[#270F42]">
+                {service.heading}
+              </h2>
               <p className="text-justify">{service.description}</p>
             </div>
           ))}

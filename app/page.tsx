@@ -5,6 +5,7 @@ import Footer from "@/components/sections/Footer";
 import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
 import Team from "@/components/sections/Team";
+import WhatsappIcon from "@/components/WhatsappIcon";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Explore />
       <Team />
       <Footer />
+      <WhatsappIcon />
     </div>
   );
 }

@@ -72,12 +72,14 @@ const Team = () => {
     },
   ];
   return (
-    <section className="px-[5%] lg:px-8%] py-20 lg:py-32">
+    <section id="team" className="px-[5%] lg:px-8%] py-20 lg:py-32">
       <div className="2xl:container mx-auto">
         <div className="flex justify-between items-center">
           <div>
             <h4 className="uppercase text-xs">Our Team</h4>
-            <h1 className="text-4xl font-semibold mt-3">Behind The Design</h1>
+            <h1 className="text-4xl font-semibold mt-3 text-[#270F42]">
+              Behind The Design
+            </h1>
           </div>
           <div className="hidden lg:flex font-mono items-center justify-center bg-black px-6 py-4 rounded-full text-white">
             <p className="text-[0.6rem] uppercase my-auto tracking-widest">
