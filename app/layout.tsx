@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Open_Sans, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
+// import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -53,6 +56,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 800,
+  //     easing: "ease-in-out",
+  //     once: true,
+  //     offset: 120,
+  //     delay: 100,
+  //   });
+  // }, []);
+
   return (
     <html lang="en">
       <body className={bricolageGrotesque.className}>{children}</body>
