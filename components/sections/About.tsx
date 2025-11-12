@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoPlayOutline } from "react-icons/io5";
-import bgImage from "@/assets/about-background.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

@@ -3,7 +3,6 @@
 import React from "react";
 import { BsInstagram, BsTwitterX } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa6";
-import memmberImg from "/PHOTO-2025-11-04-10-15-40.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
