@@ -24,9 +24,9 @@ const Services = () => {
       icon: <LuBlocks size={25} color="#270F42" />,
     },
     {
-      heading: "Wall Screeding",
+      heading: "Wall Skimming",
       description:
-        "High-quality wall screeding services to create perfectly smooth surfaces ready for painting or finishing.",
+        "Professional wall skimming that creates flawlessly smooth surfaces, ensuring the perfect foundation for paint or wallpaper application.",
       icon: <LuBlocks size={25} color="#270F42" />,
     },
     {

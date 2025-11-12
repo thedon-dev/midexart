@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsappIcon = () => {
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div className="fixed bottom-8 right-8 z-50 animate-bounce">
       <a
         href="https://wa.me/+2348159154713"
         target="_blank"

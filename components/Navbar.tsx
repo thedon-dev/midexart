@@ -30,7 +30,10 @@ const Navbar = () => {
       <div className="2xl:container mx-auto flex justify-between">
         <div className="w-full fixed left-0 top-0 lg:relative lg:w-4/10 bg-white px-5 py-3 flex justify-between">
           <img src={logo.src} alt="" className="w-[50px] object-cover" />
-          <button className="cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+          <button
+            className="lg:hidden cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             <HiBars3 size={25} />
           </button>
         </div>

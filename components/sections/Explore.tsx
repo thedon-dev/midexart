@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
+// import bgImg from "../../assets/";
 
 const Explore = () => {
   const works = ["Paintings", "Pop Finishing", "Wall Designs"];
@@ -15,7 +16,14 @@ const Explore = () => {
   return (
     <section id="explore" className="lg:px-[8%] lg:py-32">
       <div className="2xl:container mx-auto">
-        <div className="bg-black/40 py-10 lg:py-16 rounded-b text-white">
+        <div
+          className="bg-black/40 py-10 lg:py-16 rounded-b text-white"
+          style={{
+            backgroundImage: "url(/IMG_6296.JPG)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <h3 className="text-xs mx-auto uppercase text-center">
             Explore Our Works
           </h3>

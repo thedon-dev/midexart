@@ -37,7 +37,9 @@ const Hero = () => {
                 </h1>
                 <div className="mt-10 lg:mt-20">
                   <motion.a
-                    href="mailto:midemidexartdesigns3@gmail.com"
+                    href="https://wa.me/+2348159154713"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="rounded-full border border-h px-10 py-3 text-sm"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

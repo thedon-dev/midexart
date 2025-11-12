@@ -3,7 +3,7 @@
 import React from "react";
 import { BsInstagram, BsTwitterX } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa6";
-import memmberImg from "@/assets/teamMember.png";
+import memmberImg from "/PHOTO-2025-11-04-10-15-40.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -16,7 +16,7 @@ const Team = () => {
     {
       name: "Victor",
       position: "ceo",
-      image: memmberImg.src,
+      image: "/PHOTO-2025-11-04-10-15-40.jpg",
       socials: [
         {
           icon: <FaFacebookF size={16} className="" color="black" />,
@@ -32,44 +32,44 @@ const Team = () => {
         },
       ],
     },
-    {
-      name: "Victor",
-      position: "ceo",
-      image: memmberImg.src,
-      socials: [
-        {
-          icon: <FaFacebookF size={16} className="" color="black" />,
-          link: "",
-        },
-        {
-          icon: <BsInstagram size={16} className="" color="black" />,
-          link: "",
-        },
-        {
-          icon: <BsTwitterX size={16} className="" color="black" />,
-          link: "",
-        },
-      ],
-    },
-    {
-      name: "Victor",
-      position: "ceo",
-      image: memmberImg.src,
-      socials: [
-        {
-          icon: <FaFacebookF size={16} className="" color="black" />,
-          link: "",
-        },
-        {
-          icon: <BsInstagram size={16} className="" color="black" />,
-          link: "",
-        },
-        {
-          icon: <BsTwitterX size={16} className="" color="black" />,
-          link: "",
-        },
-      ],
-    },
+    // {
+    //   name: "Victor",
+    //   position: "ceo",
+    //   image: memmberImg.src,
+    //   socials: [
+    //     {
+    //       icon: <FaFacebookF size={16} className="" color="black" />,
+    //       link: "",
+    //     },
+    //     {
+    //       icon: <BsInstagram size={16} className="" color="black" />,
+    //       link: "",
+    //     },
+    //     {
+    //       icon: <BsTwitterX size={16} className="" color="black" />,
+    //       link: "",
+    //     },
+    //   ],
+    // },
+    // {
+    //   name: "Victor",
+    //   position: "ceo",
+    //   image: memmberImg.src,
+    //   socials: [
+    //     {
+    //       icon: <FaFacebookF size={16} className="" color="black" />,
+    //       link: "",
+    //     },
+    //     {
+    //       icon: <BsInstagram size={16} className="" color="black" />,
+    //       link: "",
+    //     },
+    //     {
+    //       icon: <BsTwitterX size={16} className="" color="black" />,
+    //       link: "",
+    //     },
+    //   ],
+    // },
   ];
   return (
     <section id="team" className="px-[5%] lg:px-8%] py-20 lg:py-32">
@@ -87,7 +87,7 @@ const Team = () => {
             </p>
           </div>
         </div>
-        <div className="mt-10 grid gap-5 lg:gap-0 lg:grid-cols-3">
+        <div className="mx-auto mt-10 max-w-lg">
           {teamMembers.map((member, index) => (
             <div
               key={index}
@@ -98,7 +98,7 @@ const Team = () => {
               }}
               className={`${
                 index === 1 ? "lg:mt-16" : index === 2 ? "lg:mt-32" : ""
-              } h-[300px] lg:h-[400px] p-5 flex flex-col justify-between`}
+              } h-[400px] lg:h-[500px] p-5 flex flex-col justify-between`}
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
